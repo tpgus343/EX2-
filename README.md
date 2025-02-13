@@ -9,7 +9,6 @@ To install Milvus, download the docker-compose.yml file using the following comm
 
 ```bash
 wget https://github.com/milvus-io/milvus/releases/download/v2.3.21/milvus-standalone-docker-compose.yml -O docker-compose.yml
-
 ```
 
 # 1.2 Start Milvus
@@ -17,6 +16,7 @@ Navigate to the directory where the `docker-compose.yml` file was downloaded and
 
 ```bash
 sudo docker compose up -d
+```
 
 **Expected output:**
 
@@ -24,13 +24,14 @@ sudo docker compose up -d
 Creating milvus-etcd  ... done
 Creating milvus-minio ... done
 Creating milvus-standalone ... done
+```
 
 # 1.3 Verify Milvus Installation
 To check if Milvus DB is running properly, use the following command:
 
 ```bash
 sudo docker compose ps
-
+```
 
 **Expected output:**
 
@@ -40,12 +41,14 @@ Name                     Command                  State                         
 milvus-etcd         etcd -advertise-client-url ...   Up             2379/tcp, 2380/tcp
 milvus-minio        /usr/bin/docker-entrypoint ...   Up (healthy)   9000/tcp
 milvus-standalone   /tini -- milvus run standalone   Up             0.0.0.0:19530->19530/tcp, 0.0.0.0
+```
 
 # 1.4 Check Milvus Listening Port
 To verify the port Milvus is listening on, use the following command:
 
 ```bash
 docker port milvus-standalone 19530/tcp
+```
 
 # 2. Connecting to Milvus from Jupyter
 
@@ -54,6 +57,7 @@ To connect to Milvus from Python (e.g., Jupyter notebook), first install the `py
 
 ```bash
 pip install pymilvus
+```
 
 ## 2.2 Running Milvus Data Insert and Search Example
 Now that everything is set up, you can run the Milvus example scripts to insert data and search using text embeddings.
