@@ -1,4 +1,4 @@
-# Milvus and PostgreSQL (pgvector) Docker Setup Guide
+# Milvus  Docker Setup Guide
 
 This document explains how to set up Milvus and PostgreSQL with the pgvector extension in a Docker environment. Additionally, it covers the steps to connect to Milvus from Jupyter and use it for data insertion and similarity search.
 
