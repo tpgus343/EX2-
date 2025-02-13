@@ -10,6 +10,8 @@ To install Milvus, download the docker-compose.yml file using the following comm
 ```bash
 wget https://github.com/milvus-io/milvus/releases/download/v2.3.21/milvus-standalone-docker-compose.yml -O docker-compose.yml
 
+```
+
 # 1.2 Start Milvus
 Navigate to the directory where the `docker-compose.yml` file was downloaded and run the following command to start Milvus:
 
